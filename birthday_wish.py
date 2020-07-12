@@ -19,11 +19,6 @@ def sendEmail(to, sub, msg):
         smtp.login('Email','password')
         smtp.send_message(email)
         print("Email send")
-
-
-
-
-
     pass
 if __name__ == "__main__":
     df = pd.read_excel("data.xlsx")
@@ -47,9 +42,3 @@ if __name__ == "__main__":
         #print((df.loc[i, 'Year'])
     #print(df)
     df.to_excel("data.xlsx", index=False)
-
-
-
-    
-    
-    
